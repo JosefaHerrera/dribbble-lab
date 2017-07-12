@@ -6,8 +6,6 @@ $(document).ready(function() {
 
 	$.getJSON('https://api.dribbble.com/v1/users/RypeArts/shots?access_token=a94cc9a5cdd89d403fe031a7173778db76ebd7ed8d919fbc2efc33371723ecea', function(data) {
 			data.forEach(function(e){
-				var titulo = e.title;
-				console.log(titulo);
 				$(".addp").append("<div class='box col-md-3'><img class='img-responsive imges' src='"+e.images.normal+
 					"'><div class='overlay'><div class='text'>"+e.description+
 					"</div></div><br><div class='contadores'><div class='cont'><i class='fa fa-eye icont' aria-hidden='true'></i>"+
